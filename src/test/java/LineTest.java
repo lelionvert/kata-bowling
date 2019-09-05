@@ -33,6 +33,8 @@ public class LineTest {
     @Test
     public void each_line_include_ten_frames_for_the_bowler() {
         Line line = new Line();
-        assertThat(line.size()).isEqualTo(10);
+        assertThat(line.size()).isEqualTo(Line.NUMBER_OF_FRAME_IN_A_LINE);
     }
+
+
 }
