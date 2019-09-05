@@ -1,4 +1,4 @@
-class Score {
+class Line {
 
     private int points;
 
