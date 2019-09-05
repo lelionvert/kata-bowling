@@ -1,8 +1,10 @@
 import org.junit.Test;
 
+import java.security.KeyStore;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class BowlingTest {
+public class LineTest {
 
     @Test
     public void when_a_number_of_pins_fail_we_win_the_same_number_points() {
@@ -28,6 +30,9 @@ public class BowlingTest {
         assertThat(expectednumberOfPoints).isEqualTo(line.getPoints());
     }
 
-
-
+    @Test
+    public void each_line_include_ten_frames_for_the_bowler() {
+        Line line = new Line();
+        assertThat(line.size()).isEqualTo(10);
+    }
 }

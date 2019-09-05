@@ -1,12 +1,21 @@
 class Line {
 
-    private int points;
+    private int score;
+    private Frame[] frames;
+
+    Line() {
+        frames = new Frame[10];
+    }
 
     void calculatePoints(int numberOfPins) {
-         points += numberOfPins;
+         score += numberOfPins;
     }
 
     public int getPoints() {
-        return points;
+        return score;
+    }
+
+    public int size() {
+        return frames.length;
     }
 }
