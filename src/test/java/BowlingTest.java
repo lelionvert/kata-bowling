@@ -13,5 +13,16 @@ public class BowlingTest {
         assertThat(expectedNumberOfPoints).isEqualTo(score.calculatePoints(numberOfPins));
     }
 
+    @Test
+    public void addtionPoints() {
+        int numberOfPins = 3;
+        Score score = new Score();
+        score.calculatePoints(numberOfPins);
+        numberOfPins = 4;
 
+        int frameScore = score.calculatePoints(numberOfPins);
+
+        int expectednumberOfPoints = 7;
+        assertThat(expectednumberOfPoints).isEqualTo(frameScore);
+    }
 }

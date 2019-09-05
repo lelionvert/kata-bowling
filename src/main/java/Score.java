@@ -1,6 +1,8 @@
 class Score {
 
+    private int points;
+
     int calculatePoints(int numberOfPins) {
-        return numberOfPins;
+        return this.points += numberOfPins;
     }
 }
