@@ -8,7 +8,7 @@ class Line {
         frames = new Frame[NUMBER_OF_FRAME_IN_A_LINE];
     }
 
-    void calculatePoints(int numberOfPins) {
+    void roll(int numberOfPins) {
          score += numberOfPins;
     }
 
